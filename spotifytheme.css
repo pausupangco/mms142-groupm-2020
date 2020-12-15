@@ -19,7 +19,7 @@ background-color: #cb1582;
   padding-top: 24px;
 }
 
-.sidenav a {
+.sidenav a.menu {
   padding: 5px 5px 5px 32px;
   text-decoration: none;
   font-size: 14px;
@@ -27,7 +27,7 @@ background-color: #cb1582;
   display: block;
 }
 
-.sidenav a:hover {
+.sidenav a.menu:hover {
   color: #1DB954
 }
 
@@ -37,6 +37,59 @@ background-color: #cb1582;
   font-size: 14px;
   color: #818181;
   display: block;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a.menu {font-size: 18px;}
+}
+
+a.history:link, a.history:visited {
+  background-color: black;
+  width: 175px;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 25px
+}
+
+a.history:hover, a.lm:active {
+color: black;
+  background-color: white;
+}
+
+a.about:link, a.about:visited {
+  background-color: #a5ffef;
+  width: 175px;
+  color: #cb1582;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 25px
+}
+
+a.about:hover, a.about:active {
+color: #cb1582;
+  background-color: white;
+}
+
+a.future:link, a.future:visited {
+  background-color: #1ed760;
+  width: 175px;
+  color: #2d46b9;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 25px
+}
+
+a.future:hover, a.future:active {
+color: #2d46b9;
+  background-color: white;
 }
 
 .main1 {
@@ -61,7 +114,7 @@ margin-left: 450px
 }
 
 .main2 {
- height: 33%;
+ height: 34%;
   width: 100%;
   position: fixed;
   z-index: -1;
@@ -77,28 +130,27 @@ margin-left: 450px
   font-size: 14px;
 color: #a5ffef;
   display: block;
-margin-top: 20px;
-margin-left: 450px
+margin-top: 50px;
+margin-left: 850px
 }
 
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+.main3 {
+ height: 33%;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: #2d46b9;
+  overflow-x: hidden;
+  margin-top: 525px;
 }
 
-ab:link, ab:visited {
-  background-color: BLACK;
-width: 200px;
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
+.main3text {
   text-decoration: none;
-  display: inline-block;
-  border-radius: 25px
-}
-
-ab:hover, ab:active {
-  background-color: white;
-color: black
+  font-size: 14px;
+color: #1ed760;
+  display: block;
+margin-top: 50px;
+margin-left: 450px
 }
